@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>body{font-family: 'Roboto', sans-serif;}</style>
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<title>Guestbook Entry Form | Justin Luzong</title>
+</head>
+
+<body>
+<header role="banner">
+	<body background="images/backgrounds/playstation-pattern.png">
+	</br>
+	<h1 align="center">Guestbook Entry Form</h1>
+</header>
+
+<main role="main">
+	<form name="guestbook" action= "submit_comment.php" method="post">  
+		<table border="0" width="450" cellspacing="0" cellpadding="10" align="center">
+		<tr>
+			<td>Name: <input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>Email: <input type="text" name="email"></td>
+		</tr>
+		<tr>
+			<td>Subject: <input type="text" name="subject"></td>
+		</tr>
+		<tr>
+			<td>Comments: <textarea name="comment" cols="40" rows="5"></textarea></td>
+		</tr>
+		<tr>
+			<td align="center">
+			<input type="submit" name"submitfeedback" value="Submit">
+			<input type="button" name"viewentries" onclick="window.location='comment.txt'" value="View Entries">
+			</td>
+		</tr>
+	</table>
+	</form>
+	</br>
+	<h2 align="center">Other PHP Examples</h2>
+	<center><p><a href="password-generator.php">Random Password Generator</a></p></center>
+	<center><p><a href="login.php">Login Page</a></p></center>
+	<center><p><a href="loop-table.php">Loop Table</a></p></center>
+	</br>
+</main>
+
+<footer role="contentinfo">
+	</br>
+	<center><a href="index.html">Home Page</a></center>
+	</br>
+	<center><small>&copy; 2017 Justin Luzong</small></center>
+	</br>
+</footer>
+
+</body>
+</html>

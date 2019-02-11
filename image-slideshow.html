@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<title>Photography Slideshow | Justin Luzong</title>
+	<style>
+		body{
+			background-image: url("images/backgrounds/photography.png");
+			background-color: #cccccc;
+			@import url('https://fonts.googleapis.com/css?family=Roboto');
+			font-family: 'Roboto', sans-serif;
+			font-size: 12pt;
+			color: black;
+		}
+		h1, h2{
+			text-align: center;
+			color: maroon;
+		}
+	</style>
+	<script type="text/javascript" language="Javascript">
+	<!-- Hide script from old browsers
+
+	myPix = new Array("images/slideshow/IMG_1844.jpg","images/slideshow/IMG_1916.jpg","images/slideshow/IMG_2161.jpg")
+	thisPic = 0
+	imgCt = myPix.length - 1
+
+	function processPrevious() {
+		if (document.images && thisPic > 0) {
+			thisPic--
+			document.myPicture.src=myPix[thisPic]
+		}
+		else{
+			thisPic = 2
+			document.myPicture.src=myPix[thisPic]
+		}
+	}
+
+	function processNext() {
+		if (document.images && thisPic < imgCt) {
+			thisPic++
+			document.myPicture.src=myPix[thisPic]
+		}
+		else{
+			thisPic = 0
+			document.myPicture.src=myPix[thisPic]
+		}
+	}
+
+	// End hiding script from old browsers -->
+	</script>	
+</head>
+<body>
+	</br>
+	<h1 align="center">Photography Slideshow</h1>
+	<p align="center"><img src="images/slideshow/IMG_1844.jpg" name="myPicture" width="667" height="444" alt="Slideshow" /></p>
+	<h1 align="center"><a href="javascript:processPrevious()" style="text-decoration:none; color:maroon;">< Previous</a> | <a href="javascript:processNext()"  style="text-decoration:none; color:maroon;">Next ></a></h1>
+	
+	</br></br>
+	<center><a href="assignment5.html">Return to Assignment 5</a></center>
+
+<footer role="contentinfo">
+	</br>
+	<center><a href="index.html">Home Page</a></center>
+	</br>
+	<center><small>&copy; 2017 Justin Luzong</small></center>
+	</br>
+</footer>
+</body>
+</html>

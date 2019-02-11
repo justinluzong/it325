@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>body{font-family: 'Roboto', sans-serif;}</style>
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<title>Feedback | Justin Luzong</title>
+
+	<!-- Javascript activation removed for PHP implementation -->
+	<script language="Javascript" type="text/javascript">
+	<!-- Hide script from older browsers
+
+		function validEmail(email) {
+			invalidChars = " /:,;"
+			if (email == "") {						// cannot be empty
+				return false
+			}
+			for (i=0; i<invalidChars.length; i++) {	// does it contain any invalid characters?
+				badChar = invalidChars.charAt(i)
+				if (email.indexOf(badChar,0) > -1) {
+					return false
+				}
+			}
+			atPos = email.indexOf("@",1)			// there must be one "@" symbol
+			if (atPos == -1) {
+				return false
+			}
+			if (email.indexOf("@",atPos+1) != -1) {	// and only one "@" symbol
+				return false
+			}
+			periodPos = email.indexOf(".",atPos)
+			if (periodPos == -1) {					// and at least one "." after the "@"
+				return false
+			}
+			if (periodPos+3 > email.length)	{		// must be at least 2 characters after the "."
+				return false
+			}
+			return true
+		}
+
+
+	function validateForm(){
+		if (feedback.name.value == ""){
+			alert("Please enter a name.");
+			feedback.name.focus();
+			feedback.name.select();
+			return false;
+		}
+  		if (feedback.comment.value == ""){
+			alert("Please enter a comment.");
+			feedback.comment.focus();
+			feedback.comment.select();
+			return false;
+		}
+		if (!validEmail(feedback.email.value)){
+			alert("Please enter a valid email address.");
+			feedback.email.focus();
+			feedback.email.select();
+			return false;
+		}
+		if (!feedback.sitedesign.checked && !feedback.links.checked && !feedback.easeofuse.checked 
+			&& !feedback.images.checked && !feedback.sourcecode.checked){
+				alert("Please select at least one thing you liked.");
+				return false;
+		}
+		if (feedback.accessfeedback.value == ""){
+			alert("Please select a site referral.");
+			return false;
+		}
+		if (feedback.siterating.value == ""){
+			alert("Please select a rating.");
+			feedback.siterating.focus();
+			return false;
+		}
+		return true
+	}
+		// End hiding script -->
+	</script>	
+</head>
+
+<body>
+<header role="banner">
+	<body background="images/backgrounds/playstation-pattern.png">
+	</br>
+	<h1 align="center">Feedback Form</h1>
+</header>
+
+<main role="main">
+	<form post name="feedback" action="submit_feedback.php">
+	<table border="0" width="550" cellspacing="0" cellpadding="10" align="center">
+		<tr>
+			<td>Please fill out this form to help us improve our site.</td>
+		</tr>
+		<tr>
+			<td>Name: <input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>Comments: <textarea name="comment" cols="40" rows="5"></textarea></td>
+		</tr>
+		<tr>
+			<td>Email Address: <input type="password" name="email"></td>
+		</tr>
+		<tr>
+			<td><b>Things you liked:</b>
+			</br>
+			Site design <input type="checkbox" name="liked[]" value="sitedesign">
+			 Links <input type="checkbox" name="liked[]" value="links">
+			 Ease of use <input type="checkbox" name="liked[]" value="easeofuse">
+			 Images <input type="checkbox" name="liked[]" value="images">
+			 Source code <input type="checkbox" name="liked[]" value="sourcecode">
+			 <input type="checkbox" name="liked[]" value="" style="display:none;" checked>
+			</td>
+		</tr>
+		<tr>
+			<td><b>How did you get to our site?:</b>
+			</br>
+			Search engine <input type="radio" name="accessfeedback" value="searchengine">
+			 Links from another site <input type="radio" name="accessfeedback" value="externallinks">
+			 Deitel.com Web site <input type="radio" name="accessfeedback" value="deitelwebsite">
+			 Reference in a book <input type="radio" name="accessfeedback" value="bookreference">
+			 Other <input type="radio" name="accessfeedback" value="other">
+			</td>
+		</tr>
+		<tr>
+			<td>Rate our site: <select name="siterating">
+			<option value=""></option>
+			<option value="10">10</option>
+			<option value="9">9</option>
+			<option value="8">8</option>
+			<option value="7">7</option>
+			<option value="6">6</option>
+			<option value="5">5</option>
+			<option value="4">4</option>
+			<option value="3">3</option>
+			<option value="2">2</option>
+			<option value="1">1</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input type="submit" name"submitfeedback" value="Submit Your Entries">
+			 <input type="reset" name"clearform" value="Clear Your Entries">
+			</td>
+		</tr>
+	</table>
+	</form>
+	</br>
+</main>
+
+<footer role="contentinfo">
+	</br>
+	<center><a href="index.html">Home Page</a></center>
+	</br>
+	<center><small>&copy; 2017 Justin Luzong</small></center>
+	</br>
+</footer>
+
+</body>
+</html>

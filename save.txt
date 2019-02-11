@@ -1,0 +1,24 @@
+if(isset($_POST["sitedesign"])){
+	$sitedesign = $_POST["sitedesign"];
+	$sitedesign = trim($sitedesign);
+}
+if(isset($_POST["links"])){
+	$links = $_POST["links"];
+	$links = trim($links);
+}
+if(isset($_POST["easeofuse"])){
+	$easeofuse = $_POST["easeofuse"];
+	$easeofuse = trim($easeofuse);
+}
+if(isset($_POST["images"])){
+	$images = $_POST["images"];
+	$images = trim($images);
+}
+if(isset($_POST["sourcecode"])){
+	$sourcecode = $_POST["sourcecode"];
+	$sourcecode = trim($sourcecode);
+}
+if(isset($_POST["accessfeedback"])){
+	$accessfeedback = $_POST["accessfeedback"];
+	$accessfeedback = trim($accessfeedback);
+}

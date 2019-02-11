@@ -1,0 +1,12 @@
+﻿body{
+	background-image: url("images/backgrounds/playstation-pattern.png");
+	background-color: #cccccc;
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+
+h1, h2{
+	text-align: center;
+	color: teal;
+}
