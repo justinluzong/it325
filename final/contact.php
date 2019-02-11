@@ -12,12 +12,14 @@
 	.portfolio-bg{
     		background-image: url("/images/backgrounds/portfolio-bg.jpg");
     		height: 1000px;
-   		position: relative;
+   		position: relative;
+
   		background-position: center;
     		background-repeat: no-repeat;
    		background-size: cover;
 	}
-	</style>
+	</style>
+
 </head>
 
 <body> 
@@ -51,7 +53,7 @@
     </div>
   </li>
   <li class="nav-li"><a href="/final/awards.html">Awards</a></li>
-  <li class="nav-li"><a href="/final/contact.php">Contact Me</a></li>
+  <li class="nav-li"><a href="https://raw.githubusercontent.com/justinluzong/it325/master/final/contact.php">Contact Me</a></li>
 </ul>
 </div>
 </header>
@@ -64,7 +66,8 @@
 	<div class="main-info">
 
 	  <form method="post" action="contact.php">
-
+
+
         <p>First Name: <input type="text" name="first_name" /> Last Name: <input type="text" name="last_name" /></p>
         <p>Email Address: <input type="text" name="email" size="50" /></p>
         <p>Street Address: <input type="text" name="address" size="50" /></p>
@@ -222,7 +225,8 @@ else{
 ?>
 
       </form>
-
+
+
 	</div>
 </main>
 
