@@ -6,18 +6,20 @@
 }
 
 .home-bg{
-    background-image: url("/images/backgrounds/home-bg.jpg");
+    background-image: url("/it325/images/backgrounds/home-bg.jpg");
     height: 100%; 
-    position: relative;
+    position: relative;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .portfolio-bg{
-    background-image: url("/images/backgrounds/portfolio-bg.jpg");
+    background-image: url("/it325/images/backgrounds/portfolio-bg.jpg");
     height: 850px;
-    position: relative;
+    position: relative;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
